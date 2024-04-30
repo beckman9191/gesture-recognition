@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AdditionFragment">
+    
+    <com.example.a4starter.CanvasView
+        android:id="@+id/canvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/two_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/canvas"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+
+        android:showDividers="middle"
+        android:divider="@drawable/divider"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:id="@+id/clearButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:onClick="SendMessage"
+
+            android:text="@string/Clear" />
+
+        <Button
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:id="@+id/okButton"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:onClick="SendMessage"
+
+            android:text="@string/OK" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
